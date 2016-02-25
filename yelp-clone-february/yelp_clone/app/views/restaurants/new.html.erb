@@ -1,5 +1,9 @@
-<%= form_for Restaurant.new do |f| %>
+<%= form_for @restaurant do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.submit %>
 <% end %>
+
+<!-- The create action features a hash named params, with another hash in it
+called restaurant - this comes from what has been passed in to 'form_for'.
+The restaurant hash has a property with the key 'name'. -->
